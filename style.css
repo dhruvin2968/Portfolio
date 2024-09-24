@@ -31,6 +31,146 @@ body {
     color: var(--text-color);
 }
 
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    #ifram
+    {
+        max-width: 220%;
+    }
+    .home {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .change-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .info-box {
+        flex-direction: column;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-box a.btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    .about .img-about img {
+        max-width: 300px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+    }
+
+    .skill-main {
+        grid-template-columns: 1fr;
+    }
+
+    .porfessional {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 2%;
+    }
+
+    #ifram
+    {
+        max-width: 220%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: var(--secon-bg-color);
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .navList a {
+        padding: 10px 0;
+    }
+
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .btn-box {
+        width: 100%;
+    }
+
+    .btn-box a.btn {
+        width: 100%;
+    }
+
+    .social-icons {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about .img-about img {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 769px) {
+    #menu-icon {
+        display: none;
+    }
+
+    .navList {
+        display: flex;
+    }
+}
+
+/* All other original styles remain unchanged */
+
+
 header {
     display: flex;
     align-items: center;
